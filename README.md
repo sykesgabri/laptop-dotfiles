@@ -55,6 +55,86 @@ stow .
 
 If you get a `Stowing . would cause conflicts` warning, it is because your home directory already has a file in the same name and location as the one stow is trying to create a symlink for. Read whatever paths Stow is saying causes conflicts, and delete those files in your home directory, then try the Stow command again.
 
+## Setting up Firefox the way I like it
+
+The reason my .mozilla folder is not included in the dots is a combination of just being careful, and it only working some of the time when transferring to new installs. In lieu of that folder, I'll just document how Firefox is set up on all my computers regardless of type or OS. My settings are fairly strict, and I make use of a good number of extensions, you may wish to do stuff differently, this is just how I do it.
+
+<details>
+<summary>Firefox settings:</summary><br>
+
+### General
+
+<img src="assets/general1.png"><br>
+<img src="assets/general2.png"><br>
+<img src="assets/general3.png"><br>
+<img src="assets/general4.png">
+
+### Home
+
+<img src="assets/home1.png">
+
+### Search
+
+<img src="assets/search1.png">
+
+### Privacy & Security
+
+<img src="assets/prisec1.png"><br>
+<img src="assets/prisec2.png"><br>
+<img src="assets/prisec3.png"><br>
+<img src="assets/prisec4.png">
+
+Set all permissions to auto disallow (you can still manually enable them on a per site basis when needed), and autoplay to block audio and video.
+
+No syncing, no importing from previous browser, set Firefox to default browser.
+
+</details>
+
+<details>
+<summary>Extensions:</summary><br>
+
+- [uBlock Origin](https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin/)
+- [SponsorBlock](https://addons.mozilla.org/en-GB/firefox/addon/sponsorblock/) (All categories set to manual skip, highlights, chapters, and muted segments turned off)
+- [Return YouTube Dislike](https://addons.mozilla.org/en-GB/firefox/addon/return-youtube-dislikes/) (Neon ratio bar and thumbs)
+- [Unhook](https://addons.mozilla.org/en-GB/firefox/addon/youtube-recommended-videos/) <br> <img src="assets/unhook1.png"><br><img src="assets/unhook2.png"><br>
+- [Violentmonkey](https://addons.mozilla.org/en-GB/firefox/addon/violentmonkey/) (List of userscripts below)
+- [Fastforward](https://addons.mozilla.org/en-GB/firefox/addon/fastforwardteam/)
+- [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/firefox/addon/user-agent-string-switcher/)
+- [YouTube Volume Normalizer](https://addons.mozilla.org/en-GB/firefox/addon/youtube-volume-normalizer/)
+- [Stylus](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/) (List of themes below)
+- [Wayback Machine](https://addons.mozilla.org/en-GB/firefox/addon/wayback-machine_new)
+- [Turn Off the Lights](https://addons.mozilla.org/en-GB/firefox/addon/turn-off-the-lights/)
+- [Firefox Color](https://addons.mozilla.org/en-GB/firefox/addon/firefox-color) (Used to apply [Catppuccin](https://github.com/catppuccin/firefox) to Firefox)
+- [TOSDR](https://addons.mozilla.org/en-GB/firefox/addon/terms-of-service-didnt-read/)
+- [TTV LOL PRO](https://addons.mozilla.org/en-GB/firefox/addon/ttv-lol-pro/)
+- [No Dumb TLDs](https://addons.mozilla.org/en-GB/firefox/addon/no-dumb-tld-s/)
+
+Userscripts:
+- [YouTube Shorts Redirect](https://greasyfork.org/en/scripts/439993-youtube-shorts-redirect)
+- [Twitch Auto Channel Points Claimer](https://greasyfork.org/en/scripts/392348-twitch-auto-channel-points-claimer)
+- [Restore YouTube Username](https://greasyfork.org/en/scripts/468740-restore-youtube-username-from-handle-to-custom)
+- [YouTube JS Engine Tamer](https://greasyfork.org/en/scripts/473972-youtube-js-engine-tamer)
+
+Userstyles:
+- [Arch Wiki Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/arch-wiki)
+- [Canvas LMS Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/canvas-lms)
+- [ChatGPT Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/chatgpt)
+- [DuckDuckGo Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/duckduckgo)
+- [Github Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/github)
+- [Gmail Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/gmail)
+- [Google Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/google)
+- [Modrinth Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/modrinth)
+- [Reddit Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/reddit)
+- [Stylus Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/stylus)
+- [Twitch Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/twitch)
+- [WhatsApp Web Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/whatsapp-web)
+- [Wikipedia Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/wikipedia)
+- [YouTube Catppuccin](https://github.com/catppuccin/userstyles/tree/main/styles/youtube)
+
+All Catppuccin variants are Mocha Sapphire.
+
+</details>
+
 ## If you are not me, read this:
 
 Some parts of these dotfiles will be very specific to my setup, which is probably not the exact same as yours. Assuming you are not me, here's a list of some configs you may want to change:
