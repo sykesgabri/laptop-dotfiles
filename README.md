@@ -36,6 +36,7 @@ sudo pacman -S --needed git stow i3-wm zsh zsh-syntax-highlighting starship alac
 - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Hack.zip) (Extract in `/usr/share/fonts`)
 - [polybar-spotify](https://github.com/PrayagS/polybar-spotify) <details><summary>Click here for notes.</summary><br>A Polybar module that provides Spotify status and controls, my Polybar config expects it to be in ~/github/, if you clone this repo somewhere else, you'll have to change the path in .config/polybar/config.ini. If you use a player other than Spotify, you can change where it pulls its status from in get_spotify_status.sh, my own one is set to "chromium" for Tidal-HiFi.</details>
 - [zscroll](https://github.com/noctuid/zscroll) (Install `zscroll-git` from the AUR. If your distro didn't come with an AUR helper, go through the steps to set up [yay](https://github.com/Jguer/yay))
+- [Catppuccin GTK theme](https://github.com/catppuccin/gtk/releases/v0.7.5) (Download the Mocha Sapphire zip, extract it to ~/.themes, and set using lxappearance. 0.7.5 is linked because it is the last version to include the GTK-2.0 directory needed for lxappearance)
 - [Catppuccin cursors](https://github.com/catppuccin/cursors) (Follow the instructions in the readme and use lxappearance to set them)
 - [Catppuccin Papirus folders](https://github.com/catppuccin/papirus-folders) (Follow the instructions in the readme and use lxappearance to set them)
 - [Any other Catppuccin themes](https://catppuccin.com/ports) (Find and install the ones you need for the programs you use so that all their appearances match, the variant you want is Mocha Sapphire)
@@ -142,9 +143,5 @@ Some parts of these dotfiles will be very specific to my setup, which is probabl
 - The .sh files in .screenlayout/ correspond to my monitor setup. I strongly recommend deleting them and using arandr to create a .sh file for your monitor setup. Ensure that whatever you name it is reflected in the exec command at the bottom of .config/i3/config so that it is automatically executed when you log in.
 
 - You may wish to remove various exec commands from the i3 config. The top one prevents the screen from going to sleep. The rest correspond to various programs, some of which you may not use. Just don't delete the ones for lxsession, picom, the .screenlayout/ script, polybar, and nitrogen.
-
-## Note on why Catppuccin GTK theme is included in my dots:
-
-The Catppuccin GTK theme is currently an [archived repo](https://github.com/catppuccin/gtk), and not included in https://catppuccin.com/ports as of writing this. Their reasons for this are detailed in said archived repo. In the releases, the most recent ones do not contain the GTK-2.0 directory needed to have the theme work with lxappearance in i3. The release I'm using is v0.7.5, the last (as far as I've checked) to have the files necessary for my setup. I could just link to that specific release, but given the circumstances it's easier to just include the whole theme in my dots.
 
 This repo was created following this tutorial: https://www.youtube.com/watch?v=y6XCebnB9gs
